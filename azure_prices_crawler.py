@@ -40,22 +40,7 @@ def csv_writer(data, filename, write_type):
             writer.writerow(FIELDS)
 
         for value in data["Items"]:
-            writer.writerow([
-                value[FIELDS[0]],
-                value[FIELDS[1]],
-                value[FIELDS[2]],
-                value[FIELDS[3]],
-                value[FIELDS[4]],
-                value[FIELDS[5]],
-                value[FIELDS[6]],
-                value[FIELDS[7]],
-                value[FIELDS[8]],
-                value[FIELDS[9]],
-                value[FIELDS[10]],
-                value[FIELDS[11]],
-                value[FIELDS[12]],
-                value[FIELDS[13]],
-            ])
+            writer.writerow([value[x] for x in FIELDS])
 
 
 def get_next_page(json_data):
