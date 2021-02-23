@@ -4,6 +4,8 @@ import csv
 
 
 BASE_URL = "https://prices.azure.com/api/retail/prices?$filter=location eq"
+LOCATION = "EU West"
+# LOCATION = "DE West Central"
 
 FIELDS = [
     "currencyCode",
@@ -30,11 +32,12 @@ ToDo:
 """
 
 
-def csv_writer(data, filename):
-    with open(f'{filename}.csv', 'w', newline='') as file:
+def csv_writer(data, filename, write_type):
+    with open(f'{filename}.csv', write_type, newline="") as file:
         writer = csv.writer(file)
-        # Write CSV headers
-        writer.writerow(FIELDS)
+
+        if write_type == "w":
+            writer.writerow(FIELDS)
 
         for value in data["Items"]:
             writer.writerow([
@@ -74,24 +77,19 @@ def call_next_page(current_page_data):
 def get_api_data(location):
     r = requests.get(BASE_URL+f" '{location}'")
     data = json.loads(json.dumps(r.json()))
-    print("page 1")
+    csv_writer(data, LOCATION, "w")
+
     if get_next_page(data):
         next_page_exists = True
-        new_data = call_next_page(data)
-        data.update(new_data)
-        print("page 2")
-
+        new_data = data
     while next_page_exists:
         new_data = call_next_page(new_data)
         if new_data:
-            data.update(new_data)
             print(get_next_page(new_data))
+            csv_writer(data, LOCATION, "a")
         else:
             next_page_exists = False
             print("done")
 
-    return data
 
-
-data = get_api_data("EU West")
-csv_writer(data, "eu-west-prices")
+get_api_data(LOCATION)
