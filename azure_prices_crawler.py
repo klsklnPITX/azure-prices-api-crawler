@@ -7,6 +7,7 @@ BASE_URL = "https://prices.azure.com/api/retail/prices?$filter=location eq"
 # LOCATION = "EU West"
 LOCATION = "DE West Central"
 
+
 FIELDS = [
     "currencyCode",
     "retailPrice",
@@ -24,12 +25,11 @@ FIELDS = [
     "type"
 ]
 
-""" 
-ToDo:
-* Call API with location param
-* Get values for required fields
-* Save to CSV and excel file
-"""
+
+def test_for_machine(machine, data):
+    for value in data["Items"]:
+        if machine in value["meterName"]:
+            print(f"Found: {value['meterName']}")
 
 
 def csv_writer(data, filename, write_type):
@@ -78,6 +78,7 @@ def get_api_data(location):
     r = requests.get(BASE_URL+f" '{location}'")
     data = json.loads(json.dumps(r.json()))
     csv_writer(data, LOCATION, "w")
+    test_for_machine("NV16as", data)
 
     if get_next_page(data):
         next_page_exists = True
@@ -85,8 +86,9 @@ def get_api_data(location):
     while next_page_exists:
         new_data = call_next_page(new_data)
         if new_data:
+            test_for_machine("NV16as", new_data)
             print(get_next_page(new_data))
-            csv_writer(data, LOCATION, "a")
+            csv_writer(new_data, LOCATION, "a")
         else:
             next_page_exists = False
             print("done")
