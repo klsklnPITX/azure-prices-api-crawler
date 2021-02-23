@@ -1,0 +1,58 @@
+currencyCode,retailPrice,unitPrice,location,meterId,meterName,productId,productName,skuName,armSkuName,serviceName,serviceFamily,unitOfMeasure,type
+USD,2.38,2.38,EU West,fe8170f4-b698-4d4d-ba84-d6ee6ff74c97,Standard Live Encoder Channel,DZH318Z0BQLJ,Live Channels,Standard Live Encoder,,Media Services,2.38,1 Hour,Consumption
+USD,1.008,1.008,EU West,fe9f5ef3-3255-44a6-bbd1-a5b9cf9c3110,E8 v3,DZH318Z0BPWF,Cloud Services Ev3 Series,E8 v3,Standard_E8_v3,Cloud Services,1.008,1 Hour,Consumption
+USD,0.64,0.64,EU West,fe9f5ef3-3255-44a6-bbd1-a5b9cf9c3110,E8 v3,DZH318Z0BPWF,Cloud Services Ev3 Series,E8 v3,Standard_E8_v3,Cloud Services,0.64,1 Hour,DevTestConsumption
+USD,0.055,0.055,EU West,fea0de99-4dcb-4387-82b9-fc3348238b27,C1 Cache,DZH318Z0BQH5,Azure Redis Cache Basic,C1,Azure_Redis_Cache_Basic_C1_Cache,Redis Cache,0.055,1 Hour,Consumption
+USD,0.02418,0.02418,EU West,feb87166-5659-592a-afdc-f56e7927f3f3,D2s v3 Spot,DZH318Z0BQ50,Virtual Machines DSv3 Series,D2s v3 Spot,Standard_D2s_v3,Virtual Machines,0.02418,1 Hour,Consumption
+USD,0.4839,0.4839,EU West,fed0286c-5505-4f37-b1ef-89edf04239ee,S0 Secondary Active DTUs,DZH318Z0BQHF,SQL Database Single Standard,S0 Secondary Active,,SQL Database,0.4839,1/Day,Consumption
+USD,1.430645,1.430645,EU West,fed855b8-ea0e-59ca-93db-894d31d52423,ND24rs Spot,DZH318Z0BPX4,Virtual Machines NDS Series Windows,ND24rs Spot,Standard_ND24rs,Virtual Machines,1.430645,1 Hour,DevTestConsumption
+USD,3.575733,3.575733,EU West,fed855b8-ea0e-59ca-93db-894d31d52423,ND24rs Spot,DZH318Z0BPX4,Virtual Machines NDS Series Windows,ND24rs Spot,Standard_ND24rs,Virtual Machines,3.575733,1 Hour,Consumption
+USD,0.006,0.006,EU West,fedd6b0c-670a-4a0f-8954-82553b7f1f62,B1ls,DZH318Z0BQNH,Virtual Machines BS Series Windows,B1ls,Standard_B1ls,Virtual Machines,0.006,1 Hour,DevTestConsumption
+USD,0.0106,0.0106,EU West,fedd6b0c-670a-4a0f-8954-82553b7f1f62,B1ls,DZH318Z0BQNH,Virtual Machines BS Series Windows,B1ls,Standard_B1ls,Virtual Machines,0.0106,1 Hour,Consumption
+USD,0.036,0.036,EU West,fee1c571-5e0d-47ef-b031-3ba67f6a67c2,A1,DZH318Z0BQNM,Virtual Machines A Series Basic Windows,A1,Basic_A1,Virtual Machines,0.036,1 Hour,Consumption
+USD,0.027,0.027,EU West,fee1c571-5e0d-47ef-b031-3ba67f6a67c2,A1,DZH318Z0BQNM,Virtual Machines A Series Basic Windows,A1,Basic_A1,Virtual Machines,0.027,1 Hour,DevTestConsumption
+USD,4.376,4.376,EU West,fef6733d-e08c-4751-9342-442dfbb19bd3,E64 v3,DZH318Z0BPWF,Cloud Services Ev3 Series,E64 v3,Standard_E64_v3,Cloud Services,4.376,1 Hour,DevTestConsumption
+USD,7.32,7.32,EU West,fef6733d-e08c-4751-9342-442dfbb19bd3,E64 v3,DZH318Z0BPWF,Cloud Services Ev3 Series,E64 v3,Standard_E64_v3,Cloud Services,7.32,1 Hour,Consumption
+USD,0.0,0.0,EU West,ff01cd49-9161-4c97-bfed-32096b1c3b6e,Disk Delete Operations - Free,DZH318Z0BNWT,Standard Page Blob v2,Standard LRS,,Storage,0.0,10K,Consumption
+USD,8.48,8.48,EU West,ff052bc0-bdca-5b48-b96e-37c82dda2ae8,E64-32ds v4,DZH318Z0CSHB,Virtual Machines Edsv4 Series Windows,E64-32ds v4,Standard_E64-32ds_v4,Virtual Machines,8.48,1 Hour,Consumption
+USD,5.536,5.536,EU West,ff052bc0-bdca-5b48-b96e-37c82dda2ae8,E64-32ds v4,DZH318Z0CSHB,Virtual Machines Edsv4 Series Windows,E64-32ds v4,Standard_E64-32ds_v4,Virtual Machines,5.536,1 Hour,DevTestConsumption
+USD,214.53,214.53,EU West,ff35e261-d5fc-4cd6-b611-7517f36435a6,S448om Instance,DZH318Z0BNWL,SAP HANA on Azure Large Instances,S448om,SAP_HANA_On_Azure_S448om,Specialized Compute,214.53,1 Hour,Consumption
+USD,1127587.0,1127587.0,EU West,ff35e261-d5fc-4cd6-b611-7517f36435a6,S448om Instance,DZH318Z0BNWL,SAP HANA on Azure Large Instances,S448om,SAP_HANA_On_Azure_S448om,Specialized Compute,1127587.0,1 Hour,Reservation
+USD,751725.0,751725.0,EU West,ff35e261-d5fc-4cd6-b611-7517f36435a6,S448om Instance,DZH318Z0BNWL,SAP HANA on Azure Large Instances,S448om,SAP_HANA_On_Azure_S448om,Specialized Compute,751725.0,1 Hour,Reservation
+USD,1.0,1.0,EU West,ff38deb7-0642-5056-9e42-73735e3d5d96,Azure Hosted Managed VNET IR Orchestration Activity Run,DZH318Z0CGNN,Azure Synapse Analytics Pipelines,Azure Hosted Managed VNET IR,,Azure Synapse Analytics,1.0,1K,Consumption
+USD,0.0,0.0,EU West,ff3e6fa5-ee46-478e-8d0e-b629f4f8a8ac,B1s - Free,DZH318Z0BQNH,Virtual Machines BS Series Windows,B1s,Standard_B1s,Virtual Machines,0.0,1 Hour,Consumption
+USD,0.0,0.0,EU West,ff3e6fa5-ee46-478e-8d0e-b629f4f8a8ac,B1s - Free,DZH318Z0BQNH,Virtual Machines BS Series Windows,B1s,Standard_B1s,Virtual Machines,0.0,1 Hour,DevTestConsumption
+USD,779360.0,779360.0,EU West,ff4276fa-9aa6-4f09-9254-1a65deff5999,Archive - 10 PB RA-GRS Data Stored,DZH318Z0CLSK,Storage Reserved Capacity,Archive - 10 PB RA-GRS,Archive_RA-GRS_Data_Stored_10 Pb,Storage,779360.0,1 GB/Month,Reservation
+USD,0.00279,0.00279,EU West,ff4276fa-9aa6-4f09-9254-1a65deff5999,Archive RA-GRS Data Stored,DZH318Z0BNZJ,Blob Storage,Archive RA-GRS,,Storage,0.00279,1 GB/Month,Consumption
+USD,0.00279,0.00279,EU West,ff4276fa-9aa6-4f09-9254-1a65deff5999,Archive RA-GRS Data Stored,DZH318Z0BPH7,General Block Blob v2,Archive RA-GRS,,Storage,0.00279,1 GB/Month,Consumption
+USD,8434.0,8434.0,EU West,ff4276fa-9aa6-4f09-9254-1a65deff5999,Archive - 100 TB RA-GRS Data Stored,DZH318Z0CLSK,Storage Reserved Capacity,Archive - 100 TB RA-GRS,Archive_RA-GRS_Data_Stored_100 Tb,Storage,8434.0,1 GB/Month,Reservation
+USD,3051.0,3051.0,EU West,ff4276fa-9aa6-4f09-9254-1a65deff5999,Archive - 100 TB RA-GRS Data Stored,DZH318Z0CLSK,Storage Reserved Capacity,Archive - 100 TB RA-GRS,Archive_RA-GRS_Data_Stored_100 Tb,Storage,3051.0,1 GB/Month,Reservation
+USD,29840.0,29840.0,EU West,ff4276fa-9aa6-4f09-9254-1a65deff5999,Archive - 1 PB RA-GRS Data Stored,DZH318Z0CLSK,Storage Reserved Capacity,Archive - 1 PB RA-GRS,Archive_RA-GRS_Data_Stored_1 Pb,Storage,29840.0,1 GB/Month,Reservation
+USD,82149.0,82149.0,EU West,ff4276fa-9aa6-4f09-9254-1a65deff5999,Archive - 1 PB RA-GRS Data Stored,DZH318Z0CLSK,Storage Reserved Capacity,Archive - 1 PB RA-GRS,Archive_RA-GRS_Data_Stored_1 Pb,Storage,82149.0,1 GB/Month,Reservation
+USD,280851.0,280851.0,EU West,ff4276fa-9aa6-4f09-9254-1a65deff5999,Archive - 10 PB RA-GRS Data Stored,DZH318Z0CLSK,Storage Reserved Capacity,Archive - 10 PB RA-GRS,Archive_RA-GRS_Data_Stored_10 Pb,Storage,280851.0,1 GB/Month,Reservation
+USD,3.75,3.75,EU West,ff4915fd-280d-4668-9265-d5ddb30b69cf,PRS1 Secondary Active DTUs,DZH318Z0BQH0,SQL Database Single Premium RS,PRS1 Secondary Active,,SQL Database,3.75,1/Day,Consumption
+USD,0.217,0.217,EU West,ff5780b4-6f9c-5886-82a1-b26a32c52a68,ASIP,DZH318Z0DCR5,Azure App Service Isolated v2 Plan,ASIP,,Azure App Service,0.217,1 Hour,Consumption
+USD,0.62,0.62,EU West,ff58e97e-1cef-4332-bd1e-c38c74f5effd,H8,DZH318Z0BXDW,Virtual Machines H Promo Series,H8,Standard_H8_Promo,Virtual Machines,0.62,1 Hour,Consumption
+USD,0.134,0.134,EU West,ff5c3af2-30f5-4c48-a5c0-e5b369e61652,vCore,DZH318Z0CHGB,Azure Data Factory v2 Wrangling Data Flow - General Purpose,vCore,,Azure Data Factory v2,0.134,1 Hour,Consumption
+USD,0.408,0.408,EU West,ff6337ba-f0af-43b1-971f-5a100bed5a99,A4,DZH318Z0BPRB,Virtual Machines A Series Basic,A4,Basic_A4,Virtual Machines,0.408,1 Hour,Consumption
+USD,0.179299,0.179299,EU West,ff6716e8-ad22-5850-bbfb-58476dc057b9,E4ds v4 Spot,DZH318Z0CSHB,Virtual Machines Edsv4 Series Windows,E4ds v4 Spot,Standard_E4ds_v4,Virtual Machines,0.179299,1 Hour,Consumption
+USD,0.041209,0.041209,EU West,ff6716e8-ad22-5850-bbfb-58476dc057b9,E4ds v4 Spot,DZH318Z0CSHB,Virtual Machines Edsv4 Series Windows,E4ds v4 Spot,Standard_E4ds_v4,Virtual Machines,0.041209,1 Hour,DevTestConsumption
+USD,21440.0,21440.0,EU West,ff6ae7cb-c0d3-4100-a9ee-fc56c68c8dc7,D64as v4,DZH318Z0CM2C,Virtual Machines Dasv4 Series,D64as v4,Standard_D64as_v4,Virtual Machines,21440.0,1 Hour,Reservation
+USD,44256.0,44256.0,EU West,ff6ae7cb-c0d3-4100-a9ee-fc56c68c8dc7,D64as v4,DZH318Z0CM2C,Virtual Machines Dasv4 Series,D64as v4,Standard_D64as_v4,Virtual Machines,44256.0,1 Hour,Reservation
+USD,3.68,3.68,EU West,ff6ae7cb-c0d3-4100-a9ee-fc56c68c8dc7,D64a v4/D64as v4,DZH318Z0CM2B,Virtual Machines Dav4 Series,D64a v4,Standard_D64a_v4,Virtual Machines,3.68,1 Hour,Consumption
+USD,21440.0,21440.0,EU West,ff6ae7cb-c0d3-4100-a9ee-fc56c68c8dc7,D64a v4/D64as v4,DZH318Z0CM2B,Virtual Machines Dav4 Series,D64a v4,Standard_D64a_v4,Virtual Machines,21440.0,1 Hour,Reservation
+USD,3.68,3.68,EU West,ff6ae7cb-c0d3-4100-a9ee-fc56c68c8dc7,D64as v4,DZH318Z0CM2C,Virtual Machines Dasv4 Series,D64as v4,Standard_D64as_v4,Virtual Machines,3.68,1 Hour,Consumption
+USD,44256.0,44256.0,EU West,ff6ae7cb-c0d3-4100-a9ee-fc56c68c8dc7,D64a v4/D64as v4,DZH318Z0CM2B,Virtual Machines Dav4 Series,D64a v4,Standard_D64a_v4,Virtual Machines,44256.0,1 Hour,Reservation
+USD,106825.0,106825.0,EU West,ff81789f-1286-59d1-bb36-3ec6efa6f191,M64dms_v2,DZH318Z08LV1,Virtual Machines MdSv2 Series,M64dms_v2,M64dms_v2,Virtual Machines,106825.0,1 Hour,Reservation
+USD,73753.0,73753.0,EU West,ff81789f-1286-59d1-bb36-3ec6efa6f191,M64dms_v2,DZH318Z08LV1,Virtual Machines MdSv2 Series,M64dms_v2,M64dms_v2,Virtual Machines,73753.0,1 Hour,Reservation
+USD,14.476,14.476,EU West,ff81789f-1286-59d1-bb36-3ec6efa6f191,M64dms_v2,DZH318Z08LV1,Virtual Machines MdSv2 Series,M64dms_v2,M64dms_v2,Virtual Machines,14.476,1 Hour,Consumption
+USD,0.816058,0.816058,EU West,ff865eac-f34a-5fb6-9449-c6031c1b7656,E48as v4 Spot,DZH318Z0CM92,Virtual Machines Easv4 Series Windows,E48as v4 Spot,Standard_E48as_v4,Virtual Machines,0.816058,1 Hour,DevTestConsumption
+USD,2.04023,2.04023,EU West,ff865eac-f34a-5fb6-9449-c6031c1b7656,E48as v4 Spot,DZH318Z0CM92,Virtual Machines Easv4 Series Windows,E48as v4 Spot,Standard_E48as_v4,Virtual Machines,2.04023,1 Hour,Consumption
+USD,0.082417,0.082417,EU West,ff909d3e-6952-5786-b483-d56ef40db768,E8-2ds v4 Spot,DZH318Z0CSHK,Virtual Machines Edsv4 Series,E8-2ds v4 Spot,Standard_E8-2ds_v4,Virtual Machines,0.082417,1 Hour,Consumption
+USD,3.0,3.0,EU West,ff92c14c-af83-412e-9144-a2542dfe0b4f,Certificate Renewal Request,DZH318Z0BQG0,Key Vault,Premium,,Key Vault,3.0,1,Consumption
+USD,3.0,3.0,EU West,ff92c14c-af83-412e-9144-a2542dfe0b4f,Certificate Renewal Request,DZH318Z0BQG0,Key Vault,Standard,,Key Vault,3.0,1,Consumption
+USD,0.382904,0.382904,EU West,ffbc1de0-ab5a-5a88-9b75-89ab06dc2c36,D32a v4/D32as v4 Spot,DZH318Z0CM2B,Virtual Machines Dav4 Series,D32a v4 Spot,Standard_D32a_v4,Virtual Machines,0.382904,1 Hour,Consumption
+USD,0.14,0.14,EU West,ffc1e024-a212-469f-af2d-e11862844c7e,Hot GRS Iterative Write Operations,DZH318Z0C120,General Block Blob v2 Hierarchical Namespace,Hot RA-GRS,,Storage,0.14,100,Consumption
+USD,0.14,0.14,EU West,ffc1e024-a212-469f-af2d-e11862844c7e,Hot GRS Iterative Write Operations,DZH318Z0C120,General Block Blob v2 Hierarchical Namespace,Hot GRS,,Storage,0.14,100,Consumption
+USD,0.553,0.553,EU West,ffdc19d1-edc5-4eea-bb90-59874848f262,H16m Low Priority,DZH318Z0BPW8,Virtual Machines H Series Windows,H16m Low Priority,Standard_H16m,Virtual Machines,0.553,1 Hour,DevTestConsumption
+USD,1.828,1.828,EU West,ffdc19d1-edc5-4eea-bb90-59874848f262,H16m Low Priority,DZH318Z0BPW8,Virtual Machines H Series Windows,H16m Low Priority,Standard_H16m,Virtual Machines,1.828,1 Hour,Consumption
