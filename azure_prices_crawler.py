@@ -4,8 +4,8 @@ import csv
 
 
 BASE_URL = "https://prices.azure.com/api/retail/prices?$filter=location eq"
-LOCATION = "EU West"
-# LOCATION = "DE West Central"
+# LOCATION = "EU West"
+LOCATION = "DE West Central"
 
 FIELDS = [
     "currencyCode",
@@ -52,7 +52,7 @@ def csv_writer(data, filename, write_type):
                 value[FIELDS[8]],
                 value[FIELDS[9]],
                 value[FIELDS[10]],
-                value[FIELDS[1]],
+                value[FIELDS[11]],
                 value[FIELDS[12]],
                 value[FIELDS[13]],
             ])
