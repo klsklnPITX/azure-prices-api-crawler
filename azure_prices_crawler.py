@@ -1,4 +1,3 @@
-from os import sep
 import requests
 import json
 import csv
