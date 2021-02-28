@@ -1,13 +1,11 @@
+from os import sep
 import requests
 import json
 import csv
 
 
 BASE_URL = "https://prices.azure.com/api/retail/prices?$filter=location eq"
-# LOCATION = "EU West"
-LOCATION = "DE West Central"
-
-
+LOCATIONS = ["DE West Central", "EU West"]
 FIELDS = [
     "currencyCode",
     "retailPrice",
@@ -24,12 +22,6 @@ FIELDS = [
     "unitOfMeasure",
     "type"
 ]
-
-
-def test_for_machine(machine, data):
-    for value in data["Items"]:
-        if machine in value["meterName"]:
-            print(f"Found: {value['meterName']}")
 
 
 def csv_writer(data, filename, write_type):
@@ -59,11 +51,19 @@ def call_next_page(current_page_data):
     return new_data
 
 
-def get_api_data(*locations, filename="output", separated_files=True):
-    for location in locations:
+def get_api_data(*locations, separated_files=True, filename="output"):
+    for idx, location in enumerate(locations):
+        if separated_files:
+            write_type = "w"
+            filename = location
+        if idx == 0 and not separated_files:
+            write_type = "w"
+        elif idx > 0 and not separated_files:
+            write_type = "a"
+
         r = requests.get(BASE_URL+f" '{location}'")
         data = json.loads(json.dumps(r.json()))
-        csv_writer(data, location, "w")
+        csv_writer(data, filename, write_type)
 
         if get_next_page(data):
             next_page_exists = True
@@ -72,10 +72,10 @@ def get_api_data(*locations, filename="output", separated_files=True):
             new_data = call_next_page(new_data)
             if new_data:
                 print(get_next_page(new_data))
-                csv_writer(new_data, location, "a")
+                csv_writer(new_data, filename, "a")
             else:
                 next_page_exists = False
-                print("done")
+                print(f"Done with: {location}")
 
 
-get_api_data(LOCATION)
+get_api_data(*LOCATIONS, separated_files=False)
