@@ -59,24 +59,23 @@ def call_next_page(current_page_data):
     return new_data
 
 
-def get_api_data(location):
-    r = requests.get(BASE_URL+f" '{location}'")
-    data = json.loads(json.dumps(r.json()))
-    csv_writer(data, LOCATION, "w")
-    test_for_machine("NV16as", data)
+def get_api_data(*locations, filename="output", separated_files=True):
+    for location in locations:
+        r = requests.get(BASE_URL+f" '{location}'")
+        data = json.loads(json.dumps(r.json()))
+        csv_writer(data, location, "w")
 
-    if get_next_page(data):
-        next_page_exists = True
-        new_data = data
-    while next_page_exists:
-        new_data = call_next_page(new_data)
-        if new_data:
-            test_for_machine("NV16as", new_data)
-            print(get_next_page(new_data))
-            csv_writer(new_data, LOCATION, "a")
-        else:
-            next_page_exists = False
-            print("done")
+        if get_next_page(data):
+            next_page_exists = True
+            new_data = data
+        while next_page_exists:
+            new_data = call_next_page(new_data)
+            if new_data:
+                print(get_next_page(new_data))
+                csv_writer(new_data, location, "a")
+            else:
+                next_page_exists = False
+                print("done")
 
 
 get_api_data(LOCATION)
